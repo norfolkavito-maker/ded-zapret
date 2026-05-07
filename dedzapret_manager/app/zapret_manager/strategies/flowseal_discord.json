@@ -1,0 +1,63 @@
+{
+  "name": "Flowseal Discord YouTube",
+  "id": "flowseal_discord_youtube",
+  "description": "Обход блокировок Discord и YouTube через Flowseal",
+  "version": "1.0.0",
+  "author": "Flowseal Team",
+  "target": "winws2",
+  "engine": "original",
+  "kind": "dpi_desync",
+  "tags": ["discord", "youtube", "flowseal"],
+  "status": "enabled",
+  "priority": "high",
+  "parameters": [
+    {
+      "name": "domain",
+      "type": "string",
+      "description": "Домен для обхода",
+      "default": "discord.com",
+      "required": true
+    },
+    {
+      "name": "port",
+      "type": "integer",
+      "description": "Порт для подключения",
+      "default": 443,
+      "required": false
+    },
+    {
+      "name": "protocol",
+      "type": "string",
+      "description": "Протокол (tcp/udp)",
+      "default": "tcp",
+      "required": false
+    }
+  ],
+  "command": {
+    "executable": "winws2.exe",
+    "args": [
+      "--domain={domain}",
+      "--port={port}",
+      "--protocol={protocol}",
+      "--filter-udp",
+      "--dpi-desync=fake",
+      "--oob=http"
+    ]
+  },
+  "requirements": {
+    "min_version": "0.1.0",
+    "platform": "windows",
+    "admin_rights": true
+  },
+  "performance": {
+    "speed": "high",
+    "stability": "stable",
+    "success_rate": 0.95
+  },
+  "metadata": {
+    "created_at": "2024-01-15T00:00:00Z",
+    "updated_at": "2024-05-20T12:00:00Z",
+    "downloads": 15000,
+    "rating": 4.8
+  }
+}

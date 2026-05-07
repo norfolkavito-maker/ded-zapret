@@ -1,0 +1,10 @@
+# Basic hostlist for testing
+# This is a placeholder file for testing
+# In production, this should contain actual blocked domains/hosts
+
+google.com
+youtube.com
+facebook.com
+instagram.com
+twitter.com
+discord.com

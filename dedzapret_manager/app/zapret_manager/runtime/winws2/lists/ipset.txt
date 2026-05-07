@@ -1,0 +1,9 @@
+# Basic IP set for testing
+# This is a placeholder file for testing
+# In production, this should contain actual blocked IP ranges
+
+# Example blocked ranges
+8.8.8.0/24
+8.8.4.0/24
+8.8.2.0/24
+8.8.1.0/24
